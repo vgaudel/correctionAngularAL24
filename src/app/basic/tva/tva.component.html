@@ -1,0 +1,14 @@
+<div class="tvaDiv">
+    <h3>Calcul de tva</h3>
+
+    <label>ht :</label> <input type="number" [(ngModel)]="ht" (change)="onCalculTvaTtc()"> <br />
+
+    Taux :<select [(ngModel)]="tauxTva" (change)="onCalculTvaTtc()">
+        <option *ngFor="let t of tabTaux" [ngValue]="t">{{t}}%</option>
+    </select><br />
+
+    <div *ngIf="tva>0">
+        tva: <span class="enEvidence">{{tva | number:'1.0-2'}}</span> <br />
+        ttc: <span class="enEvidence">{{ttc | number:'1.0-2'}}</span> <br />
+    </div>
+</div>
