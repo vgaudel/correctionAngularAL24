@@ -10,4 +10,7 @@ export class SubComponentMonoDirectionComponent {
   @Input()
   variableReceptrice : string = "enfant-valeur-depart";
 
+  @Input()
+  secondeVariableReceptrice : number = 0;
+
 }

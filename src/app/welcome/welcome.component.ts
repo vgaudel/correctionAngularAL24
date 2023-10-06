@@ -11,7 +11,7 @@ export class WelcomeComponent {
 
   variableAEnvoyer : string = "parent-welcome";
   username : string ;
-
+  monNombre : number = 10;
 
   constructor(route: ActivatedRoute, public _whatsMyNameService : WhatsMyNameService){
     this.username = route.snapshot.params['username'];

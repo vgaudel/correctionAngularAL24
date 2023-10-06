@@ -16,6 +16,11 @@ import { SubComponentTwoDirectionsComponent } from './welcome/sub-component-two-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
+import { ConversionComponent } from './conversion/conversion.component';
+import { RechercheProduitSeuilComponent } from './recherche-produit-seuil/recherche-produit-seuil.component';
+import { SeuilComponent } from './recherche-produit-seuil/seuil/seuil.component';
+import { ListProdComponent } from './recherche-produit-seuil/list-prod/list-prod.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -29,7 +34,11 @@ import {MatTabsModule} from '@angular/material/tabs';
     UserComponent,
     WelcomeComponent,
     SubComponentMonoDirectionComponent,
-    SubComponentTwoDirectionsComponent
+    SubComponentTwoDirectionsComponent,
+    ConversionComponent,
+    RechercheProduitSeuilComponent,
+    SeuilComponent,
+    ListProdComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +46,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     FormsModule,
     NgbModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

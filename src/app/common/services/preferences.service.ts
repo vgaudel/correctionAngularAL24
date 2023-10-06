@@ -3,9 +3,9 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class WhatsMyNameService {
+export class PreferencesService {
 
-  myNameIs: string = "SlimShady";
+  public couleurFondPreferee :string = 'lightgrey';
 
   constructor() { }
 }

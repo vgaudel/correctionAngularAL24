@@ -1,0 +1,4 @@
+{ 
+    "/tp/devise-api" : { "secure" : false ,
+    "target" : "https://www.d-defrance.fr" }
+}

@@ -1,5 +1,5 @@
 <p>welcome works with the username {{_whatsMyNameService.myNameIs}}</p>
 message : {{variableAEnvoyer}} <br/>
 
-<app-sub-component-mono-direction [variableReceptrice]="variableAEnvoyer"></app-sub-component-mono-direction>
+<app-sub-component-mono-direction [variableReceptrice]="variableAEnvoyer" [secondeVariableReceptrice] = "monNombre"></app-sub-component-mono-direction>
 <app-sub-component-two-directions [(variableReceptrice)]="variableAEnvoyer"></app-sub-component-two-directions>
